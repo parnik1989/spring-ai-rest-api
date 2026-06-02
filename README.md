@@ -15,9 +15,14 @@ A Spring Boot REST API starter project with an AI prompt endpoint.
    ```bash
    cd ~/Projects/spring-ai-rest-api
    ```
-2. Build and run with Maven:
+2. Build and run with Gradle:
    ```bash
-   mvn spring-boot:run
+   ./gradlew bootRun
+   ```
+
+   If the Gradle wrapper is not available, use your local Gradle installation:
+   ```bash
+   gradle bootRun
    ```
 3. Send a request:
    ```bash
