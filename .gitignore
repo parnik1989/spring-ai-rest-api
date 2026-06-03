@@ -1,7 +1,9 @@
 # Maven
 /target/
 !*/src/main/**/target/
-!.mvn/wrapper/maven-wrapper.jar
+/bin/*
+.gradle/*
+/build/*
 
 # IDE files
 *.iml
