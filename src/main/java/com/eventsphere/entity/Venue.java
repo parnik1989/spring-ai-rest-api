@@ -1,6 +1,7 @@
 package com.eventsphere.entity;
 
 import jakarta.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "venues")
@@ -21,6 +22,9 @@ public class Venue {
 
     @Column(name = "base_price")
     private Double basePrice;
+
+    @OneToMany(mappedBy = "venue", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Booking> bookings;
 
     public Venue() {
     }
@@ -63,5 +67,13 @@ public class Venue {
 
     public void setBasePrice(Double basePrice) {
         this.basePrice = basePrice;
+    }
+
+    public List<Booking> getBookings() {
+        return bookings;
+    }
+
+    public void setBookings(List<Booking> bookings) {
+        this.bookings = bookings;
     }
 }
