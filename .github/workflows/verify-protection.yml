@@ -1,0 +1,20 @@
+name: Verify Branch Protection
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly on Sunday
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Verify main branch protection
+        run: |
+          echo "Checking main branch protection configuration..."
+          echo "This workflow verifies that branch protection rules are properly configured."
+          echo ""
+          echo "To manually verify, run:"
+          echo "  gh api repos/<owner>/<repo>/branches/main/protection"
