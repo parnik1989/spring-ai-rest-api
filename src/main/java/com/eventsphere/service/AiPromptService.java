@@ -1,7 +1,7 @@
-package com.example.springai.service;
+package com.eventsphere.service;
 
-import com.example.springai.model.AiPromptRequest;
-import com.example.springai.model.AiPromptResponse;
+import com.eventsphere.model.AiPromptRequest;
+import com.eventsphere.model.AiPromptResponse;
 import org.springframework.stereotype.Service;
 
 @Service

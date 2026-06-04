@@ -1,4 +1,4 @@
-package com.example.springai.model;
+package com.eventsphere.model;
 
 import jakarta.validation.constraints.NotBlank;
 

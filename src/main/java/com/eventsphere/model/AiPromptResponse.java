@@ -1,4 +1,4 @@
-package com.example.springai.model;
+package com.eventsphere.model;
 
 public class AiPromptResponse {
 
