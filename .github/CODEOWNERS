@@ -1,0 +1,11 @@
+# This file designates code owners who must approve all pull requests
+# to the main branch. See branch protection rules in .github/branch-protection.yml
+
+# All code in the repository requires approval from parnik1989
+* @parnik1989
+
+# Main configuration files require approval
+README.md @parnik1989
+build.gradle @parnik1989
+settings.gradle @parnik1989
+.github/ @parnik1989

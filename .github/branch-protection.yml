@@ -1,0 +1,28 @@
+# Branch Protection Rules Configuration for EventSphere
+# This file documents the branch protection settings for the main branch
+# To apply these rules, use the setup script: .github/scripts/setup-branch-protection.sh
+# 
+# KEY RESTRICTIONS:
+# - Code updates to main ONLY via PR merge (no direct commits)
+# - PR can only be approved by parnik1989
+# - Build must pass before merge
+# - No force pushes or deletions allowed
+
+branch: main
+required_pull_request_reviews:
+  # Require approval from code owner (parnik1989)
+  require_code_owner_reviews: true
+  required_approving_review_count: 1
+  dismiss_stale_reviews: true
+  # Only parnik1989 can approve and dismiss reviews
+  dismissal_restrictions:
+    users:
+      - parnik1989
+required_status_checks:
+  strict: true
+  contexts:
+    - build
+enforce_admins: true
+allow_force_pushes: false
+allow_deletions: false
+required_conversation_resolution: true
