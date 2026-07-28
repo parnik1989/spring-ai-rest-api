@@ -7,7 +7,7 @@ A Spring Boot REST API starter project with an AI prompt endpoint.
 - Spring Boot 3.2.x REST API
 - `/api/ai/prompt` POST endpoint
 - Placeholder AI service integration
-- GitHub Actions CI for Maven build
+- GitHub Actions CI for Gradle build
 
 ## Run locally
 
